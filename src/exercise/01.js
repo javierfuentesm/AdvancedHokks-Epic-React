@@ -21,7 +21,7 @@ const countReducer = (state, action) => {
         count: state.count + action.step,
       }
     default:
-      return state
+      throw new Error(`Unsupported action type: ${action.type}`)
   }
 }
 function Counter({initialCount = 0, step = 1}) {
