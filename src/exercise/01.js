@@ -30,7 +30,7 @@ function Counter({initialCount = 0, step = 1}) {
   // const [state, setState] = useReducer(countReducer, {
   //   count: initialCount,
   // })
-  const [state, dispatch] = React.useReducer(countReducer, {
+  const [state, dispatch] = useReducer(countReducer, {
     count: initialCount,
   })
   const {count} = state
